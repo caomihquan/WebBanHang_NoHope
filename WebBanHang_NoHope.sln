@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBanHang_NoHope", "WebBanHang_NoHope\WebBanHang_NoHope.csproj", "{AFA58E11-E58D-4E71-B521-066F346E83ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBanHang_NoHope_Models", "WebBanHang_NoHope_Models\WebBanHang_NoHope_Models.csproj", "{CE48C910-4F97-4FFC-AB0A-436522274F16}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{AFA58E11-E58D-4E71-B521-066F346E83ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFA58E11-E58D-4E71-B521-066F346E83ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFA58E11-E58D-4E71-B521-066F346E83ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE48C910-4F97-4FFC-AB0A-436522274F16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE48C910-4F97-4FFC-AB0A-436522274F16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE48C910-4F97-4FFC-AB0A-436522274F16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE48C910-4F97-4FFC-AB0A-436522274F16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
