@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebBanHang_NoHope_Models
+namespace WebBanHang_NoHope_Models.DAO
 {
-    public class Class1
+    class UserDao
     {
     }
 }
