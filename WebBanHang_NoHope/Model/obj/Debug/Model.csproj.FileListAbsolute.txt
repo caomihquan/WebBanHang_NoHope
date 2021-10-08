@@ -8,3 +8,13 @@ D:\Thang\githubweb\WebBanHang_NoHope\Model\obj\Debug\Model.csprojResolveAssembly
 D:\Thang\githubweb\WebBanHang_NoHope\Model\obj\Debug\Model.dll
 D:\Thang\githubweb\WebBanHang_NoHope\Model\obj\Debug\Model.pdb
 D:\Thang\githubweb\WebBanHang_NoHope\Model\bin\Debug\Model.dll.config
+D:\Thang\githubweb\WebBanHang_NoHope\WebBanHang_NoHope\Model\bin\Debug\Model.dll.config
+D:\Thang\githubweb\WebBanHang_NoHope\WebBanHang_NoHope\Model\bin\Debug\Model.dll
+D:\Thang\githubweb\WebBanHang_NoHope\WebBanHang_NoHope\Model\bin\Debug\Model.pdb
+D:\Thang\githubweb\WebBanHang_NoHope\WebBanHang_NoHope\Model\bin\Debug\EntityFramework.dll
+D:\Thang\githubweb\WebBanHang_NoHope\WebBanHang_NoHope\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Thang\githubweb\WebBanHang_NoHope\WebBanHang_NoHope\Model\bin\Debug\EntityFramework.xml
+D:\Thang\githubweb\WebBanHang_NoHope\WebBanHang_NoHope\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Thang\githubweb\WebBanHang_NoHope\WebBanHang_NoHope\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\Thang\githubweb\WebBanHang_NoHope\WebBanHang_NoHope\Model\obj\Debug\Model.dll
+D:\Thang\githubweb\WebBanHang_NoHope\WebBanHang_NoHope\Model\obj\Debug\Model.pdb
