@@ -17,15 +17,17 @@ namespace Model.EF
         [StringLength(250)]
         public string MetaTitle { get; set; }
 
+        public long? ParentID { get; set; }
+
         public int? DisplayOrder { get; set; }
 
         [StringLength(250)]
         public string SeoTitle { get; set; }
 
-        public DateTime? CreateDate { get; set; }
+        public DateTime? CreatedDate { get; set; }
 
         [StringLength(50)]
-        public string CreateBy { get; set; }
+        public string CreatedBy { get; set; }
 
         public DateTime? ModifiedDate { get; set; }
 
@@ -39,5 +41,10 @@ namespace Model.EF
         public string MetaDescriptions { get; set; }
 
         public bool? Status { get; set; }
+
+        public bool? ShowOnHome { get; set; }
+
+        [StringLength(2)]
+        public string Language { get; set; }
     }
 }

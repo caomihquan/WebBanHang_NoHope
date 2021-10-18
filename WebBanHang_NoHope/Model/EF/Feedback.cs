@@ -26,9 +26,8 @@ namespace Model.EF
         [StringLength(250)]
         public string Content { get; set; }
 
-        public DateTime? CreateDate { get; set; }
+        public DateTime? CreatedDate { get; set; }
 
-        [StringLength(10)]
-        public string Status { get; set; }
+        public bool? Status { get; set; }
     }
 }
