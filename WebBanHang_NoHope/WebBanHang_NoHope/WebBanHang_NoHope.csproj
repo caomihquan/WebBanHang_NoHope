@@ -1826,7 +1826,7 @@
     <Content Include="Assets\admin\vendor\select2\select2.min.css" />
     <Content Include="Assets\admin\vendor\select2\select2.min.js" />
     <Content Include="Content\PagedList.css" />
-    <Content Include="database\webnangcao.sql" />
+    <Content Include="database\dataweb.sql" />
     <Content Include="Global.asax" />
     <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Login\Index.cshtml" />
