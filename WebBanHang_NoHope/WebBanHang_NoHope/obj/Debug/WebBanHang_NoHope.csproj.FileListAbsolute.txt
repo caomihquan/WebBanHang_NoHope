@@ -103,6 +103,9 @@ C:\Users\ADMIN\Dropbox\PC\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\WebBanHang
 C:\Users\ADMIN\Dropbox\PC\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\WebBanHang_NoHope\bin\System.Web.Mvc.xml
 C:\Users\ADMIN\Dropbox\PC\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\WebBanHang_NoHope\obj\Debug\WebBanHang_NoHope.csproj.AssemblyReference.cache
 C:\Users\ADMIN\Dropbox\PC\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\WebBanHang_NoHope\obj\Debug\WebBanHang_NoHope.csproj.CoreCompileInputs.cache
-C:\Users\ADMIN\Dropbox\PC\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\WebBanHang_NoHope\obj\Debug\WebBanHang_NoHope.csproj.CopyComplete
 C:\Users\ADMIN\Dropbox\PC\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\WebBanHang_NoHope\obj\Debug\WebBanHang_NoHope.dll
 C:\Users\ADMIN\Dropbox\PC\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\WebBanHang_NoHope\obj\Debug\WebBanHang_NoHope.pdb
+C:\Users\ADMIN\Dropbox\PC\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\WebBanHang_NoHope\bin\CKFinder.dll
+C:\Users\ADMIN\Dropbox\PC\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\WebBanHang_NoHope\bin\EntityFramework.dll
+C:\Users\ADMIN\Dropbox\PC\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\WebBanHang_NoHope\bin\EntityFramework.SqlServer.dll
+C:\Users\ADMIN\Dropbox\PC\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\WebBanHang_NoHope\bin\CKFinder.pdb
