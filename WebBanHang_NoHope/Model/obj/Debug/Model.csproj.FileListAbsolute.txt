@@ -50,3 +50,19 @@ C:\Users\ADMIN\Dropbox\PC\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\Model\bin\
 C:\Users\ADMIN\Dropbox\PC\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\Model\bin\Debug\PagedList.xml
 C:\Users\ADMIN\Dropbox\PC\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\Model\bin\Debug\PagedList.Mvc.xml
 C:\Users\ADMIN\Dropbox\PC\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\caomi\Desktop\New folder\caomihquan\WebBanHang_NoHope\WebBanHang_NoHope\Model\bin\Debug\Model.dll.config
+C:\Users\caomi\Desktop\New folder\caomihquan\WebBanHang_NoHope\WebBanHang_NoHope\Model\bin\Debug\Model.dll
+C:\Users\caomi\Desktop\New folder\caomihquan\WebBanHang_NoHope\WebBanHang_NoHope\Model\bin\Debug\Model.pdb
+C:\Users\caomi\Desktop\New folder\caomihquan\WebBanHang_NoHope\WebBanHang_NoHope\Model\bin\Debug\EntityFramework.dll
+C:\Users\caomi\Desktop\New folder\caomihquan\WebBanHang_NoHope\WebBanHang_NoHope\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\caomi\Desktop\New folder\caomihquan\WebBanHang_NoHope\WebBanHang_NoHope\Model\bin\Debug\PagedList.dll
+C:\Users\caomi\Desktop\New folder\caomihquan\WebBanHang_NoHope\WebBanHang_NoHope\Model\bin\Debug\PagedList.Mvc.dll
+C:\Users\caomi\Desktop\New folder\caomihquan\WebBanHang_NoHope\WebBanHang_NoHope\Model\bin\Debug\EntityFramework.xml
+C:\Users\caomi\Desktop\New folder\caomihquan\WebBanHang_NoHope\WebBanHang_NoHope\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\caomi\Desktop\New folder\caomihquan\WebBanHang_NoHope\WebBanHang_NoHope\Model\bin\Debug\PagedList.xml
+C:\Users\caomi\Desktop\New folder\caomihquan\WebBanHang_NoHope\WebBanHang_NoHope\Model\bin\Debug\PagedList.Mvc.xml
+C:\Users\caomi\Desktop\New folder\caomihquan\WebBanHang_NoHope\WebBanHang_NoHope\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\caomi\Desktop\New folder\caomihquan\WebBanHang_NoHope\WebBanHang_NoHope\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\caomi\Desktop\New folder\caomihquan\WebBanHang_NoHope\WebBanHang_NoHope\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\caomi\Desktop\New folder\caomihquan\WebBanHang_NoHope\WebBanHang_NoHope\Model\obj\Debug\Model.dll
+C:\Users\caomi\Desktop\New folder\caomihquan\WebBanHang_NoHope\WebBanHang_NoHope\Model\obj\Debug\Model.pdb
