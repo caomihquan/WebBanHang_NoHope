@@ -1,12 +1,10 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Trang chủ";
     Layout = "~/Views/Shared/_Layouts.cshtml";
     var slides = (List<Model.EF.Slide>)ViewBag.Slides;
     var listNewProducts = (List<Model.EF.Product>)ViewBag.NewProducts;
-    var listFeatureProducts = (List<Model.EF.Product>)ViewBag.ListFeatureProducts;
-}
-
+    var listFeatureProducts = (List<Model.EF.Product>)ViewBag.ListFeatureProducts; }
 @section slide
 {
     <div class="header_slide">
@@ -94,11 +92,10 @@
             <p><span class="rupees">@(item.Price.HasValue ? item.Price.Value.ToString("N0") : "Liên hệ")</span></p>
         </div>
         <div class="add-cart">
-            <h4><a href="">Thêm vào giỏ</a></h4>
+            <h4><a href="#">Thêm vào giỏ</a></h4>
         </div>
         <div class="clear"></div>
     </div>
-</div>
-        }
+</div>}
     </div>
 </div>

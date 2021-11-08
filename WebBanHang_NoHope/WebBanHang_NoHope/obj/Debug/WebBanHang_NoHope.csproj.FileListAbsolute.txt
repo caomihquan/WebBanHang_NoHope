@@ -177,3 +177,4 @@ C:\Users\caomi\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\WebBanHang_NoHope\obj
 C:\Users\caomi\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\WebBanHang_NoHope\obj\Debug\WebBanHang_NoHope.csproj.CopyComplete
 C:\Users\caomi\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\WebBanHang_NoHope\obj\Debug\WebBanHang_NoHope.dll
 C:\Users\caomi\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\WebBanHang_NoHope\obj\Debug\WebBanHang_NoHope.pdb
+C:\Users\ADMIN\Dropbox\PC\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\WebBanHang_NoHope\obj\Debug\WebBanHang_NoHope.csproj.CopyComplete
