@@ -8,7 +8,7 @@ namespace Model.EF
     public partial class WebBanHangDbContext : DbContext
     {
         public WebBanHangDbContext()
-            : base("name=WebBanHangDbContext1")
+            : base("name=WebBanHangDbContext")
         {
         }
 
