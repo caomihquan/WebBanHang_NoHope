@@ -1,0 +1,6 @@
+C:\Users\caomi\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\Common\bin\Debug\Common.dll
+C:\Users\caomi\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\Common\bin\Debug\Common.pdb
+C:\Users\caomi\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\Common\obj\Debug\Common.csprojAssemblyReference.cache
+C:\Users\caomi\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\caomi\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\Common\obj\Debug\Common.dll
+C:\Users\caomi\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\Common\obj\Debug\Common.pdb

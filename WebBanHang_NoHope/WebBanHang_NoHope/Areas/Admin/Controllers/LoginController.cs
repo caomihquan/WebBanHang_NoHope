@@ -22,8 +22,8 @@ namespace WebBanHang_NoHope.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 var dao = new UserDao();
-                var result = dao.Login(model.UserName, model.Password);
-                if (result)
+                var result = dao.Login(model.UserName, Encryptor.MD5Hash(model.Password));
+                if (result==1)
                 {
                     var user = dao.GetById(model.UserName);
                     var userSession = new UserLogin();
@@ -33,9 +33,21 @@ namespace WebBanHang_NoHope.Areas.Admin.Controllers
                     Session.Add(CommonConstants.USER_SESSION, userSession);
                     return RedirectToAction("Index", "Home");
                 }
+                else if(result==0)
+                {
+                    ModelState.AddModelError("", "Tài Khoản Không Tồn Tại");
+                }
+                else if (result == -1)
+                {
+                    ModelState.AddModelError("", "Tài Khoản Dang Bi Khoa");
+                }
+                else if (result == -2)
+                {
+                    ModelState.AddModelError("", "Sai Mat Khau");
+                }
                 else
                 {
-                    ModelState.AddModelError("", "Sai tài khoản hoặc mật khẩu");
+                    ModelState.AddModelError("", "Sai Tai Khoan Hoac Mat Khau");
                 }
             }
             return View("Index");
