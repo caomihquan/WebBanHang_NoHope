@@ -80,9 +80,9 @@ namespace Model.Dao
         }
 
 
-        public Category ViewDetail(long id)
+        public ProductCategory ViewDetail(long id)
         {
-            return db.Categories.Find(id);
+            return db.ProductCategories.Find(id);
         }
 
 
