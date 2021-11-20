@@ -41,7 +41,7 @@ namespace WebBanHang_NoHope.Controllers
             ViewBag.Next = page + 1;
             ViewBag.Prev = page - 1;
 
-            return View(category);
+            return View(model);
         }
 
       
