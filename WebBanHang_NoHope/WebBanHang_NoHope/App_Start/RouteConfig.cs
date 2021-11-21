@@ -24,16 +24,26 @@ namespace WebBanHang_NoHope
               defaults: new { controller = "Product", action = "Detail", id = UrlParameter.Optional },
               namespaces: new[] { "WebBanHang_NoHope.Controllers" }
           );
+
+            routes.MapRoute(
+                name: "Content Detail",
+                url: "chi-tiet-bao/{metatitle}-{id}",
+                defaults: new { controller = "Content", action = "Detail", id = UrlParameter.Optional },
+                namespaces: new[] { "WebBanHang_NoHope.Controllers" }
+            );
+
+            routes.MapRoute(
+                name: "Content Category",
+                url: "danh-muc/{metatitle}-{id}",
+                defaults: new { controller = "Content", action = "MenuCategory", id = UrlParameter.Optional },
+                namespaces: new[] { "WebBanHang_NoHope.Controllers" }
+            );
+
+
             routes.MapRoute(
              name: "Tags",
              url: "tag/{tagId}",
              defaults: new { controller = "Content", action = "Tag", id = UrlParameter.Optional },
-             namespaces: new[] { "WebBanHang_NoHope.Controllers" }
-         );
-            routes.MapRoute(
-             name: "Content Detail",
-             url: "tin-tuc/{metatitle}-{id}",
-             defaults: new { controller = "Content", action = "Detail", id = UrlParameter.Optional },
              namespaces: new[] { "WebBanHang_NoHope.Controllers" }
          );
             routes.MapRoute(
