@@ -23,7 +23,7 @@ namespace WebBanHang_NoHope.Areas.Admin.Controllers
             {
                 var dao = new UserDao();
                 var result = dao.Login(model.UserName, Encryptor.MD5Hash(model.Password));
-                if (result==1)
+                if (result== 1)
                 {
                     var user = dao.GetById(model.UserName);
                     var userSession = new UserLogin();
@@ -33,7 +33,7 @@ namespace WebBanHang_NoHope.Areas.Admin.Controllers
                     Session.Add(CommonConstants.USER_SESSION, userSession);
                     return RedirectToAction("Index", "Home");
                 }
-                else if(result==0)
+                else if(result== 0)
                 {
                     ModelState.AddModelError("", "Tài Khoản Không Tồn Tại");
                 }

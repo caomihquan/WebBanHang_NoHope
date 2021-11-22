@@ -3063,6 +3063,7 @@
     <Content Include="Assets\client\js\script.js" />
     <Content Include="Assets\client\js\slides.min.jquery.js" />
     <Content Include="Assets\client\js\startstop-slider.js" />
+    <Content Include="Assets\client\Template\NewFeedback.html" />
     <Content Include="Content\PagedList.css" />
     <Content Include="database\dataweb.sql" />
     <Content Include="Global.asax" />
@@ -3458,6 +3459,7 @@
     <Compile Include="Common\Encryptor.cs" />
     <Compile Include="Common\UserLogin.cs" />
     <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\ContentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
@@ -3485,6 +3487,7 @@
     <Content Include="Views\Content\Tag.cshtml" />
     <Content Include="Views\Shared\Category.cshtml" />
     <Content Include="Views\Content\MenuCategory.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

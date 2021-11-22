@@ -87,23 +87,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="clear"></div>
             </div>
             @RenderSection("slide", required: false)
-           
+
         </div>
         <div class="main">
             @RenderBody()
-          
+
         </div>
     </div>
     <div class="footer">
         @{ Html.RenderAction("Footer", "Home");}
     </div>
     <script type="text/javascript">
-		$(document).ready(function() {
-			$().UItoTop({ easingType: 'easeOutQuart' });
+        $(document).ready(function () {
+            $().UItoTop({ easingType: 'easeOutQuart' });
 
-		});
+        });
     </script>
     <a href="#" id="toTop"><span id="toTopHover"> </span></a>
+    @RenderSection("jsFooter", required: false)
 </body>
 </html>
 
