@@ -8,7 +8,7 @@
     var listTag = (List<Model.EF.Tag>)ViewBag.Tag;
     Layout = "~/Views/Shared/_Layouts.cshtml";
 }
-<nav class="navbar">
+<nav style="padding:20px;">
     <span><a href="/"><i class="fas fa-home"></i> Trang Chủ</a> / <a href="/tin-tuc">Tin Tức</a></span>
 </nav>
 @*<div class="container-fluid">
@@ -64,9 +64,11 @@
                                     }
 
                                 </div>
+
                             </div>
                         </div>
                     </div>
+                    <div class="clear"> </div>
                     <div class="col-md-12 ">
                         <div class="product-view-top">
                             @foreach (var item in Model)
@@ -87,15 +89,20 @@
                                 </div>
                             }
 
-                            @Html.PagedListPager(Model, page => Url.Action("Index", new { page, @searchString = @ViewBag.SearchString }), new PagedListRenderOptions
-                       {
-                           LiElementClasses = new List<string> { "page-item", "page-link" },
 
-
-                       })
                         </div>
+                        <div class="col-lg-12" style="color:white">
+                            <div class="dataTables_paginate paging_simple_numbers col-md-4" id="dataTable_paginate">
+                                <span>Page</span> @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) <Span>of</Span> @Model.PageCount
 
+                                @Html.PagedListPager(Model, page => Url.Action("Index", new { page, @searchString = @ViewBag.SearchString }), new PagedListRenderOptions
+                                {
+                               LiElementClasses = new List<string> { "page-item" }
+                                })
+                            </div>
+                        </div>
                     </div>
+
                 </div>
 
                 <!-- Pagination Start -->
