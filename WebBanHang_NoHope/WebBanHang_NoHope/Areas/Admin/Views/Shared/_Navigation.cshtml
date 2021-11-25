@@ -185,7 +185,7 @@
 
                 </a>*@
 
-            @*@{
+            @{
                 var session = (UserLogin)Session[WebBanHang_NoHope.Common.CommonConstants.USER_SESSION];
             }
             @if (session == null)
@@ -197,13 +197,12 @@
                 <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:red;">
                     <span class="mr-2 d-none d-lg-inline text-gray-600 small">
-                        <img class="img-profile rounded-circle"
-                             src="/Assets/Admin/img/undraw_profile.svg" style="width:30px;height:30px">
+                        
                     </span>Xin Chào:@session.UserName
                 </a>
 
 
-            }*@
+            }
 
 
             <!-- Dropdown - User Information -->

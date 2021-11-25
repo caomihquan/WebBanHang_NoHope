@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 using WebBanHang_NoHope.Areas.Admin.Models;
 using WebBanHang_NoHope.Common;
 
@@ -52,5 +53,15 @@ namespace WebBanHang_NoHope.Areas.Admin.Controllers
             }
             return View("Index");
         }
-	}
+
+        public ActionResult Logout()
+        {
+            Session[CommonConstants.USER_SESSION] = null;
+
+
+            FormsAuthentication.SignOut();
+            // chuye view ve login
+            return RedirectToAction("Index", "Home", new { Area = "Admin" });
+        }
+    }
 }

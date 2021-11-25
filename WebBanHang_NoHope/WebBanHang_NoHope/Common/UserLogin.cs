@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace WebBanHang_NoHope.Common
+namespace WebBanHang_NoHope
 {
     [Serializable] //chuyển đổi về dạng trung gian để lưu trữ , truyền thông
     public class UserLogin
