@@ -10,9 +10,13 @@ namespace WebBanHang_NoHope.Controllers
     public class ProductController : Controller
     {
         // GET: Product
-        public ActionResult Index()
+        public ActionResult Index(string searchString, int page = 1, int pageSize = 10)
         {
-            return View();
+            var dao = new ProductDao();
+            var model = dao.ListPaging(searchString, page, pageSize);
+            ViewBag.SearchString = searchString;
+            ViewBag.ListFeatureProducts = new ProductDao().ListFeatureProduct(3);
+            return View(model);
         }
         [ChildActionOnly]
         public PartialViewResult ProductCategory()
