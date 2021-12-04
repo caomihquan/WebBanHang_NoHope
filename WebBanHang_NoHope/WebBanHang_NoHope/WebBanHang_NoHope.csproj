@@ -3498,6 +3498,7 @@
     <Content Include="Views\Content\MenuCategory.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Product\Search.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

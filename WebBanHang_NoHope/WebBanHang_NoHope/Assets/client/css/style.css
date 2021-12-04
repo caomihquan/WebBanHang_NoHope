@@ -361,6 +361,7 @@ body {
 	font-family: 'ambleregular';
 	color:#CC3636;
 }
+
 .price-details{
 	margin-top:10px;
 	border-top:1px solid #CD1F25;
@@ -478,6 +479,35 @@ body {
 	display: inline-block;
 	cursor: pointer;
 }
+.images_2_of_4 {
+	width: 30.8%;
+	padding: 1.5%;
+	text-align: center;
+	position: relative;
+}
+
+	.images_2_of_4 img {
+		max-width: 100%;
+	}
+
+	.images_2_of_4 h2 {
+		color: #6A82A4;
+		font-family: 'ambleregular';
+		font-size: 1.1em;
+		font-weight: normal;
+	}
+
+	.images_2_of_4 p {
+		font-size: 0.8125em;
+		padding: 0.4em 0;
+		color: #333;
+	}
+
+		.images_2_of_4 p span.price {
+			font-size: 18px;
+			font-family: 'ambleregular';
+			color: #CC3636;
+		}
 .copy_right {
 	text-align: center;
 	border-top: 1px solid #EEE;

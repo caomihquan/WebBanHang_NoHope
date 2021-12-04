@@ -89,9 +89,14 @@ namespace WebBanHang_NoHope
         defaults: new { controller = "User", action = "Register", id = UrlParameter.Optional },
         namespaces: new[] { "WebBanHang_NoHope.Controllers" }
     );
-      
-        
-      
+
+            routes.MapRoute(
+                   name: "Product",
+                   url: "san-pham",
+                   defaults: new { controller = "Product", action = "Index", id = UrlParameter.Optional },
+                   namespaces: new[] { "WebBanHang_NoHope.Controllers" }
+               );
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
