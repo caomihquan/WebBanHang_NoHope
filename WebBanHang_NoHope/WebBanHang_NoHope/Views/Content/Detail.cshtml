@@ -16,7 +16,7 @@
 <div class="product-view">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-9">
+            <div class="col-lg-8">
                 <div class="content">
                     <h1 style="font-size:30px;">@Model.Name</h1>
                     <div style="font-size:12px;padding:10px;">
@@ -59,13 +59,9 @@
                 </div>
 
             </div>
-            <div class="col-lg-3 sidebar">
-                <div class="sidebar-widget category">
-                    <nav class="navbar bg-light">
-
-                        @{ Html.RenderAction("Category", "Content");}
-                    </nav>
-                </div>
+            <div class="rightsidebar span_3_of_1">
+                @{ Html.RenderAction("Category", "Content");}
+                
             </div>
         </div>
 

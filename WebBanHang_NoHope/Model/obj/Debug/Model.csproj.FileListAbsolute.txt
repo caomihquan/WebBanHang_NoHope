@@ -76,7 +76,6 @@ C:\Users\caomi\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\Model\bin\Debug\Entit
 C:\Users\caomi\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\Model\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\caomi\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\Model\bin\Debug\PagedList.xml
 C:\Users\caomi\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\Model\bin\Debug\PagedList.Mvc.xml
-C:\Users\caomi\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\Model\obj\Debug\Model.csprojAssemblyReference.cache
 C:\Users\caomi\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 C:\Users\caomi\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\Model\obj\Debug\Model.csproj.CopyComplete
 C:\Users\caomi\Desktop\WebBanHang_NoHope\WebBanHang_NoHope\Model\obj\Debug\Model.dll
