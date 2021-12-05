@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model.Dao;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,9 @@ namespace WebBanHang_NoHope.Controllers
         // GET: About
         public ActionResult Index()
         {
-            return View();
+            var about = new AboutDao().ListAll();
+
+            return View(about);
         }
     }
 }

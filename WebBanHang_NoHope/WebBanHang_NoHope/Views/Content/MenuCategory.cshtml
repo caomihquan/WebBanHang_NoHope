@@ -8,9 +8,12 @@
     Layout = "~/Views/Shared/_Layouts.cshtml";
 }
 
-<nav class="navbar">
-    <span><a href="/"><i class="fas fa-home"></i> Trang Chủ</a> / <a href="/tin-tuc">Tin Tức</a></span>
-</nav>
+<div class="content_top">
+    <div class="back-links" style="width:100%">
+        <p><a href="/">Trang chủ</a> >> <a href="/tin-tuc">Tin Tức</a></p>
+    </div>
+    <div class="clear"></div>
+</div>
 
 <div class="product-view">
     <div class="container-fluid">
@@ -110,15 +113,10 @@
             </div>
 
             <!-- Side Bar Start -->
-            <div class="col-lg-4 sidebar">
-                <div class="sidebar-widget category">
-                    <nav class="navbar bg-light">
-
-                        @{ Html.RenderAction("Category", "Content");}
-                    </nav>
-                </div>
-
-                <div class="sidebar-widget tag">
+            <div class="rightsidebar span_3_of_1">
+                @{ Html.RenderAction("Category", "Content");}
+                <div class="clear"> </div>
+                <div>
                     <h2 class="title">Tags</h2>
                     @foreach (var item in listTag)
                     {
