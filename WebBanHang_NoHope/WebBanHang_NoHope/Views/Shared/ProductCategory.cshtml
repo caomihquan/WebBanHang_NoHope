@@ -9,10 +9,10 @@
     <a href="/san-pham/@item.MetaTitle-@item.ID" @parentClass>@item.Name</a>
     @if (child.Count() > 0)
     {
-<ul class="dropdown-menu">
+<ul class="dropdown-menu" style="width:100%">
     @foreach (var childItem in child)
     {
-<li><a href="/san-pham/@childItem.MetaTitle-@childItem.ID">@childItem.Name</a></li>                   
+<li ><a href="/san-pham/@childItem.MetaTitle-@childItem.ID">@childItem.Name</a></li>                   
     }
 
 </ul>}
