@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>C:\Users\caomi\OneDrive\Máy tính\New folder</_PublishTargetUrl>
-    <History>True|2021-12-19T15:10:32.4008208Z;True|2021-12-19T19:54:49.9716200+07:00;</History>
+    <History>True|2021-12-20T03:13:54.2297925Z;True|2021-12-19T22:10:32.4008208+07:00;True|2021-12-19T19:54:49.9716200+07:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="Areas/Admin/Views/About/Create.cshtml">
@@ -10011,10 +10011,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>12/19/2021 15:35:29</publishTime>
     </File>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>12/19/2021 22:09:55</publishTime>
+      <publishTime>12/20/2021 10:26:59</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>12/19/2021 22:09:54</publishTime>
+      <publishTime>12/20/2021 10:26:58</publishTime>
     </File>
     <File Include="bin/CKFinder.dll">
       <publishTime>12/19/2021 15:34:41</publishTime>
@@ -10032,13 +10032,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>12/19/2021 15:34:59</publishTime>
     </File>
     <File Include="bin/Model.dll">
-      <publishTime>12/19/2021 22:08:49</publishTime>
+      <publishTime>12/20/2021 10:26:33</publishTime>
     </File>
     <File Include="bin/Model.dll.config">
       <publishTime>12/19/2021 15:45:55</publishTime>
     </File>
     <File Include="bin/Model.pdb">
-      <publishTime>12/19/2021 22:08:49</publishTime>
+      <publishTime>12/20/2021 10:26:33</publishTime>
     </File>
     <File Include="bin/PagedList.dll">
       <publishTime>12/19/2021 15:35:00</publishTime>
@@ -10065,10 +10065,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>12/19/2021 15:34:59</publishTime>
     </File>
     <File Include="bin/WebBanHang_NoHope.dll">
-      <publishTime>12/19/2021 22:08:49</publishTime>
+      <publishTime>12/20/2021 10:26:34</publishTime>
     </File>
     <File Include="bin/WebBanHang_NoHope.pdb">
-      <publishTime>12/19/2021 22:08:49</publishTime>
+      <publishTime>12/20/2021 10:26:34</publishTime>
     </File>
     <File Include="Content/PagedList.css">
       <publishTime>12/19/2021 15:34:57</publishTime>
@@ -10080,7 +10080,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>12/19/2021 15:34:59</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>12/19/2021 22:09:50</publishTime>
+      <publishTime>12/20/2021 10:26:55</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.js">
       <publishTime>12/19/2021 15:34:58</publishTime>
@@ -10131,16 +10131,16 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>12/19/2021 19:46:44</publishTime>
     </File>
     <File Include="Views/Product/Category.cshtml">
-      <publishTime>12/19/2021 15:35:29</publishTime>
+      <publishTime>12/20/2021 10:09:59</publishTime>
     </File>
     <File Include="Views/Product/Detail.cshtml">
       <publishTime>12/19/2021 19:42:23</publishTime>
     </File>
     <File Include="Views/Product/Index.cshtml">
-      <publishTime>12/19/2021 15:35:29</publishTime>
+      <publishTime>12/20/2021 10:10:00</publishTime>
     </File>
     <File Include="Views/Product/Search.cshtml">
-      <publishTime>12/19/2021 15:35:29</publishTime>
+      <publishTime>12/20/2021 10:09:59</publishTime>
     </File>
     <File Include="Views/Shared/Category.cshtml">
       <publishTime>12/19/2021 15:35:29</publishTime>
@@ -10158,13 +10158,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>12/19/2021 15:35:29</publishTime>
     </File>
     <File Include="Views/Shared/_Layouts.cshtml">
-      <publishTime>12/19/2021 19:36:27</publishTime>
+      <publishTime>12/20/2021 10:10:01</publishTime>
     </File>
     <File Include="Views/web.config">
       <publishTime>12/19/2021 15:35:29</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>12/19/2021 22:09:22</publishTime>
+      <publishTime>12/20/2021 10:11:04</publishTime>
     </File>
   </ItemGroup>
 </Project>

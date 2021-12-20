@@ -24,7 +24,11 @@ namespace Model.Dao
 
         public long Insert(Product entity)
         {
+            string image = "<image></image>";
             db.Products.Add(entity);
+            entity.CreatedDate = DateTime.Now;
+            entity.ViewCount = 0;
+            entity.MoreImages = image;
             db.SaveChanges();
             return entity.ID;
         }
@@ -135,7 +139,7 @@ namespace Model.Dao
                              Name = a.Name,
                              MetaTitle = a.MetaTitle,
                              Price = a.Price,
-                             
+                             Link=a.Link
                          }).AsEnumerable().Select(x => new ProductViewModel()
                          {
                              CateMetaTitle = x.MetaTitle,
@@ -146,7 +150,7 @@ namespace Model.Dao
                              Name = x.Name,
                              MetaTitle = x.MetaTitle,
                              Price = x.Price,
-                             
+                             Link=x.Link
                          });
             model.OrderByDescending(x => x.CreatedDate).Skip((pageIndex - 1) * pageSize).Take(pageSize);
             return model.ToList();

@@ -13,3 +13,4 @@ C:\Users\caomi\OneDrive\Máy tính\WebBanHang_NoHope\WebBanHang_NoHope\Model\obj
 C:\Users\caomi\OneDrive\Máy tính\WebBanHang_NoHope\WebBanHang_NoHope\Model\obj\Release\Model.csproj.CopyComplete
 C:\Users\caomi\OneDrive\Máy tính\WebBanHang_NoHope\WebBanHang_NoHope\Model\obj\Release\Model.dll
 C:\Users\caomi\OneDrive\Máy tính\WebBanHang_NoHope\WebBanHang_NoHope\Model\obj\Release\Model.pdb
+C:\Users\caomi\OneDrive\Máy tính\WebBanHang_NoHope\WebBanHang_NoHope\Model\obj\Release\Model.csproj.AssemblyReference.cache
