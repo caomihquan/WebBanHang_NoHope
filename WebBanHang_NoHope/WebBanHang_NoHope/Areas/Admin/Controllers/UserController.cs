@@ -9,7 +9,7 @@ using WebBanHang_NoHope.Common;
 
 namespace WebBanHang_NoHope.Areas.Admin.Controllers
 {
-    public class UserController : Controller
+    public class UserController : BaseController
     {
         // GET: Admin/User
         public ActionResult Index(string searchString,int page=1,int pageSize=5)
@@ -45,7 +45,7 @@ namespace WebBanHang_NoHope.Areas.Admin.Controllers
                 long id = dao.Insert(user);
                 if (id > 0)
                 {
-                    //SetAlert("Thêm Thành Công ", "Success");
+                    SetAlert("Thêm Thành Công ", "Success");
                     return RedirectToAction("Index", "User");
                 }
                 else
@@ -70,7 +70,7 @@ namespace WebBanHang_NoHope.Areas.Admin.Controllers
                 var result = dao.Update(user);
                 if (result)
                 {
-                    //SetAlert("Sửa Thành Công ", "Success");
+                    SetAlert("Sửa Thành Công ", "Success");
                     return RedirectToAction("Index", "User");
                 }
                 else

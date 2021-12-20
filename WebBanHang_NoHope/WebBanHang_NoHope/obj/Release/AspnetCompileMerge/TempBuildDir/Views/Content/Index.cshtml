@@ -1,0 +1,103 @@
+﻿@model PagedList.IPagedList<Model.EF.Content>
+
+@using PagedList.Mvc;
+
+
+@{
+    ViewBag.Title = "Tin Tức";
+    var listTag = (List<Model.EF.Tag>)ViewBag.Tag;
+    Layout = "~/Views/Shared/_Layouts.cshtml";
+}
+<div class="content_top">
+    <div class="back-links" style="width:100%">
+        <p><a href="/">Trang chủ</a> >> <a href="/tin-tuc">Tin Tức</a></p>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="product-view">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="product-view-top">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    @using (Html.BeginForm("Index", "Content", FormMethod.Get))
+                                    {
+                                        <div class="product-search">
+                                            <input type="text" value="@ViewBag.SearchString" name="searchString" />
+                                            <button type="submit"><i class="fa fa-search"></i></button>
+                                        </div>
+                                    }
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"> </div>
+                    <div class="col-md-12 ">
+                        <div class="product-view-top">
+                            @foreach (var item in Model)
+                            {
+                                var link = "/chi-tiet-bao" + item.MetaTitle + "-" + item.ID;
+                                <div class="row" style="padding:15px; border-top:1px solid #b9b8b8">
+
+
+                                    <div class="col-lg-4">
+                                        <a href="@link"><img src="@item.Image" style="width:100%" alt="@item.MetaKeywords"></a>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <a href="@link"> <h3>@item.Name</h3></a>
+                                        <h4>@item.CreatedDate<span>  by:  <a href="#">@item.CreatedBy</a></span></h4>
+                                        <p style="color:#808080">@item.Description <a href="@link" title="more">[....]</a></p>
+                                    </div>
+
+                                </div>
+                            }
+
+
+                        </div>
+                        <div class="col-lg-12" style="color:white">
+                            <div class="dataTables_paginate paging_simple_numbers col-md-4" id="dataTable_paginate">
+                                <span>Page</span> @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) <Span>of</Span> @Model.PageCount
+
+                                @Html.PagedListPager(Model, page => Url.Action("Index", new { page, @searchString = @ViewBag.SearchString }), new PagedListRenderOptions
+                                {
+                               LiElementClasses = new List<string> { "page-item" }
+                                })
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Pagination Start -->
+                <!-- Pagination Start -->
+            </div>
+
+            <!-- Side Bar Start -->
+                @*<div class="sidebar-widget category">
+                    <nav class="navbar bg-light">
+
+                       
+                    </nav>
+                </div>*@
+        <div class="rightsidebar span_3_of_1">
+            @{ Html.RenderAction("Category", "Content");}
+            <div class="clear"> </div>
+            <div >
+                <h2 class="title">Tags</h2>
+                @foreach (var item in listTag)
+                {
+                    <a href="/tag/@item.ID">@item.Name</a>
+                }
+
+            </div>
+        </div>
+
+            </div>
+            <!-- Side Bar End -->
+        </div>
+    </div>

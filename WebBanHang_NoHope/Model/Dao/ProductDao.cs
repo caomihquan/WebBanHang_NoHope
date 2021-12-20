@@ -29,15 +29,7 @@ namespace Model.Dao
             return entity.ID;
         }
 
-        public int? InsertViewCount(Product entity)
-        {
 
-            var product = db.Products.Find(entity.ID);
-            product.ViewCount = entity.ViewCount;
-            db.SaveChanges();
-            return product.ViewCount + 1;
-
-        }
 
         public bool Update(Product entity)
         {
@@ -52,7 +44,7 @@ namespace Model.Dao
                 product.Price = entity.Price;
                 product.CategoryID = entity.CategoryID;
                 product.Detail = entity.Detail;
-                //product.Link = entity.Link;
+                product.Link = entity.Link;
                 product.Status = entity.Status;
                 product.ModifiedBy = entity.ModifiedBy;
                 product.ModifiedDate = DateTime.Now;
@@ -78,10 +70,7 @@ namespace Model.Dao
             return model.OrderByDescending(x => x.CreatedDate).ToPagedList(page, pageSize);
         }
 
-        public Product ViewDetail(int id)
-        {
-            return db.Products.Find(id);
-        }
+        
 
         public bool Delete(int id)
         {
@@ -176,6 +165,10 @@ namespace Model.Dao
             model.ViewCount++;
             db.SaveChanges();
             return model;
+        }
+        public Product AdminViewDetail(long id)
+        {
+            return db.Products.Find(id);
         }
     }
 }

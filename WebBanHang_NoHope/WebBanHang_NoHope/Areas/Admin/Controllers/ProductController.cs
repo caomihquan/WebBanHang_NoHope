@@ -5,10 +5,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Script.Serialization;
+using System.Xml.Linq;
 
 namespace WebBanHang_NoHope.Areas.Admin.Controllers
 {
-    public class ProductController : Controller
+    public class ProductController : BaseController
     {
         // GET: Admin/Product
         public ActionResult Index(string searchString, int page = 1, int pageSize = 10)
@@ -23,9 +25,9 @@ namespace WebBanHang_NoHope.Areas.Admin.Controllers
         {
             return View();
         }
-        public ActionResult Edit(int id)
+        public ActionResult Edit(long id)
         {
-            var product = new ProductDao().ViewDetail(id);
+            var product = new ProductDao().AdminViewDetail(id);
             return View(product);
         }
 
@@ -39,7 +41,7 @@ namespace WebBanHang_NoHope.Areas.Admin.Controllers
                 long id = dao.Insert(product);
                 if (id > 0)
                 {
-                    //SetAlert("Thêm Thành Công ", "success");
+                    SetAlert("Thêm Thành Công ", "success");
                     return RedirectToAction("Index", "Product");
                 }
                 else
@@ -60,7 +62,7 @@ namespace WebBanHang_NoHope.Areas.Admin.Controllers
                 var result = dao.Update(product);
                 if (result)
                 {
-                    //SetAlert("Sửa Thành Công ", "success");
+                    SetAlert("Sửa Thành Công ", "success");
                     return RedirectToAction("Index", "Product");
                 }
                 else
@@ -84,6 +86,64 @@ namespace WebBanHang_NoHope.Areas.Admin.Controllers
                 ModelState.AddModelError("", "Cập nhật Sản Phẩm Không thành công");
             }
             return View("Index");
+
+        }
+
+        public JsonResult LoadImages(long id)
+        {
+            ProductDao dao = new ProductDao();
+            var product = dao.AdminViewDetail(id);
+            var images = product.MoreImages;
+
+            XElement xImages = XElement.Parse(images);
+            List<string> listImagesReturn = new List<string>();
+
+            foreach (XElement element in xImages.Elements())
+            {
+                if (element == null)
+                {
+
+                }
+                else
+                {
+                    listImagesReturn.Add(element.Value);
+                }
+
+            }
+            return Json(new
+            {
+                data = listImagesReturn
+            }, JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult SaveImages(long id, string images)
+        {
+            JavaScriptSerializer serializer = new JavaScriptSerializer();
+            var listImages = serializer.Deserialize<List<string>>(images);
+
+            XElement xElement = new XElement("Images");
+
+            foreach (var item in listImages)
+            {
+                var subStringItem = item.Substring(21+9);
+                xElement.Add(new XElement("Image", subStringItem));
+            }
+            ProductDao dao = new ProductDao();
+            try
+            {
+                dao.UpdateImages(id, xElement.ToString());
+                return Json(new
+                {
+                    status = true
+                });
+            }
+            catch (Exception)
+            {
+                return Json(new
+                {
+                    status = false
+                });
+            }
 
         }
     }
