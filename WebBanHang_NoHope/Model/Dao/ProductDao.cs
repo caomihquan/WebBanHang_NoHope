@@ -24,20 +24,16 @@ namespace Model.Dao
 
         public long Insert(Product entity)
         {
+            string image = "<image></image>";
             db.Products.Add(entity);
+            entity.CreatedDate = DateTime.Now;
+            entity.ViewCount = 0;
+            entity.MoreImages = image;
             db.SaveChanges();
             return entity.ID;
         }
 
-        public int? InsertViewCount(Product entity)
-        {
 
-            var product = db.Products.Find(entity.ID);
-            product.ViewCount = entity.ViewCount;
-            db.SaveChanges();
-            return product.ViewCount + 1;
-
-        }
 
         public bool Update(Product entity)
         {
@@ -52,7 +48,7 @@ namespace Model.Dao
                 product.Price = entity.Price;
                 product.CategoryID = entity.CategoryID;
                 product.Detail = entity.Detail;
-                //product.Link = entity.Link;
+                product.Link = entity.Link;
                 product.Status = entity.Status;
                 product.ModifiedBy = entity.ModifiedBy;
                 product.ModifiedDate = DateTime.Now;
@@ -78,10 +74,7 @@ namespace Model.Dao
             return model.OrderByDescending(x => x.CreatedDate).ToPagedList(page, pageSize);
         }
 
-        public Product ViewDetail(int id)
-        {
-            return db.Products.Find(id);
-        }
+        
 
         public bool Delete(int id)
         {
@@ -146,7 +139,7 @@ namespace Model.Dao
                              Name = a.Name,
                              MetaTitle = a.MetaTitle,
                              Price = a.Price,
-                             
+                             Link=a.Link
                          }).AsEnumerable().Select(x => new ProductViewModel()
                          {
                              CateMetaTitle = x.MetaTitle,
@@ -157,7 +150,7 @@ namespace Model.Dao
                              Name = x.Name,
                              MetaTitle = x.MetaTitle,
                              Price = x.Price,
-                             
+                             Link=x.Link
                          });
             model.OrderByDescending(x => x.CreatedDate).Skip((pageIndex - 1) * pageSize).Take(pageSize);
             return model.ToList();
@@ -176,6 +169,10 @@ namespace Model.Dao
             model.ViewCount++;
             db.SaveChanges();
             return model;
+        }
+        public Product AdminViewDetail(long id)
+        {
+            return db.Products.Find(id);
         }
     }
 }

@@ -7,7 +7,7 @@ using System.Web.Mvc;
 
 namespace WebBanHang_NoHope.Areas.Admin.Controllers
 {
-    public class TagController : Controller
+    public class TagController : BaseController
     {
         // GET: Admin/Tag
         public ActionResult Index(string searchString, int page = 1, int pageSize = 10)

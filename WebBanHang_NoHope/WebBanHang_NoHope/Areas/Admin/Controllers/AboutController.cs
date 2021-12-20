@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace WebBanHang_NoHope.Areas.Admin.Controllers
 {
-    public class AboutController : Controller
+    public class AboutController : BaseController
     {
         // GET: Admin/About
         public ActionResult Index(string searchString, int page = 1, int pageSize = 10)
@@ -35,7 +35,7 @@ namespace WebBanHang_NoHope.Areas.Admin.Controllers
                 long id = dao.Insert(about);
                 if (id > 0)
                 {
-                    //SetAlert("Thêm Thành Công ", "success");
+                    SetAlert("Thêm Thành Công ", "success");
                     return RedirectToAction("Index", "About");
                 }
                 else
@@ -62,7 +62,7 @@ namespace WebBanHang_NoHope.Areas.Admin.Controllers
                 var result = dao.Update(about);
                 if (result)
                 {
-                    //SetAlert("Sửa Thành Công ", "success");
+                    SetAlert("Sửa Thành Công ", "success");
                     return RedirectToAction("Index", "About");
                 }
                 else

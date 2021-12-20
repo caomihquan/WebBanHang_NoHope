@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Xml.Linq;
 
 namespace WebBanHang_NoHope.Controllers
 {
@@ -84,10 +85,31 @@ namespace WebBanHang_NoHope.Controllers
 
         public ActionResult Detail(long id)
         {
+
             var product = new ProductDao().ViewDetail(id);
+            var images = product.MoreImages;
+            XElement xImages = XElement.Parse(images);
+            List<string> listImagesReturn = new List<string>();
+            foreach (XElement element in xImages.Elements())
+            {
+                if (element == null)
+                {
+
+                }
+                else
+                {
+                    listImagesReturn.Add(element.Value);
+                }
+
+            }
+
             ViewBag.Category = new ProductCategoryDao().ViewDetail(product.CategoryID.Value);
             ViewBag.RelatedProducts = new ProductDao().ListRelatedProducts(id);
+            ViewBag.xuly = listImagesReturn;
+
+
             return View(product);
+
         }
     }
 }

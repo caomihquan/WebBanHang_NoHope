@@ -45,7 +45,7 @@ namespace WebBanHang_NoHope.Areas.Admin.Controllers
                 var result = dao.Update(model);
                 if (result)
                 {
-                    //SetAlert("Sửa Thành Công ", "success");
+                    SetAlert("Sửa Thành Công ", "success");
                     return RedirectToAction("Index", "Content");
                 }
                 else
@@ -63,7 +63,7 @@ namespace WebBanHang_NoHope.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                //SetAlert("Thêm Thành Công ", "success");
+                SetAlert("Thêm Thành Công ", "success");
                 var session = (UserLogin)Session[CommonConstants.USER_SESSION];
                 content.CreatedBy = session.UserName;
                 //var culture = Session[CommonConstants.]
